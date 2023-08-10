@@ -147,9 +147,9 @@ function ThreadCard({
       {!isComment && community && (
         <Link
           href={`/communities/${community.id}`}
-          className='mt-5 flex items-center'
+          className='mt-5 flex items-center cursor-pointer'
         >
-          <p className='text-subtle-medium text-gray-1'>
+          <p className='text-subtle-medium text-gray-1 cursor-pointer'>
             {formatDateString(createdAt)}
             {community && ` - ${community.name} Community`}
           </p>
